@@ -71,10 +71,32 @@ export default function Footer() {
             <p className="ml-2 h-7">resume</p>
           </a>
         </li>
+
+        {/* just a spacer */}
+        <li>
+          <a
+            className=""
+            rel=""
+            target=""
+            href=""
+          >
+
+            <p className="ml-2 h-7"></p>
+          </a>
+        </li>
+
+        <li>
+          <a
+            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100 hover:underline"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://idhant.xyz/"
+          >
+            <p className="ml-0 h-4">idhant.xyz</p>
+          </a>
+        </li>
       </ul>
-      <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        idhant.xyz
-      </p>
+      <p className="text-xs text-neutral-500 mt-4">v1.02</p>
     </footer>
   )
 }

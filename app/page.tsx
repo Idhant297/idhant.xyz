@@ -4,7 +4,7 @@ export default function Page() {
     <>
       <section>
         <div className="flex items-center mb-8"> {/* Changed items-start to items-center */}
-          <h1 className="text-4xl font-semibold tracking-tighter font-eb-garamond flex-grow">
+          <h1 className="text-4xl font tracking-tighter font-eb-garamond flex-grow">
             idhant gulati
           </h1>
           <img
