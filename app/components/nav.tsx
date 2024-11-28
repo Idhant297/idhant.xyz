@@ -1,15 +1,18 @@
 import Link from 'next/link'
 
+// can add nav bar whenever needed
+
 const navItems = {
-  '/': {
-    name: 'home',
-  },
-  '/blog': {
-    name: 'blog',
-  },
-  'https://vercel.com/templates/next.js/portfolio-starter-kit': {
-    name: 'deploy',
-  },
+  // '/': {
+  //   name: 'home',
+  // },
+  // '/blog': {
+  //   name: 'blog',
+  // },
+  // 'public/doc/resume.pdf': {  
+  //   name: 'resume',
+  // },
+
 }
 
 export function Navbar() {

@@ -148,3 +148,12 @@ table {
 .title {
   text-wrap: balance;
 }
+
+.font-eb-garamond {
+  font-family: 'EB Garamond', serif;
+}
+
+.menu-heading {
+  text-align: left; /* Aligns the text to the left */
+  margin-left: 0;   /* Ensures no extra margin on the left */
+}

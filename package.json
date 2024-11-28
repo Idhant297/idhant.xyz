@@ -15,11 +15,13 @@
     "geist": "1.2.2",
     "next": "canary",
     "next-mdx-remote": "^4.4.1",
+    "pnpm": "^9.14.2",
     "postcss": "^8.4.35",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sugar-high": "^0.6.0",
     "tailwindcss": "4.0.0-alpha.13",
     "typescript": "5.3.3"
-  }
+  },
+  "packageManager": "pnpm@9.14.2+sha256.06e65a4965baff6d6097f9c8f75c35f6d420974dbc03d775009056a69edfd271"
 }
