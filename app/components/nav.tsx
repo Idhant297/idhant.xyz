@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 // can add nav bar whenever needed
 
-const navItems = {
+const navItems: Record<string, { name: string }> = {
   // '/': {
   //   name: 'home',
   // },
