@@ -1,4 +1,3 @@
-
 export default function Page() {
   return (
     <>
@@ -13,12 +12,20 @@ export default function Page() {
             className="w-32 h-32 rounded-lg ml-auto" // Increased size
           />
         </div>
+        <p className="text-3xl font-biro-script mb-4 text-left">yo,</p>
         <p className="mb-4 text-left">
-          {`hey, i'm majoring in cs at penn state. i like making machines learn and studying 
-          the intricacies of how it works. i also enjoy building cool application based stuff
-          using machine learning. on the side, i also find it fun working with robots.`}
+          {`welcome to this little space of mine on the internet.`}
         </p>
       </section>
+
+      <section>
+        <p className="mb-4 text-left">
+          {`i'm majoring in cs at penn state. i find it fun making machines learn and studying 
+          the intricacies of how it works. i also like building cool stuff
+          using machine learning. on the side, i also enjoy working with robots.`}
+        </p>
+      </section>
+
       <section>
         <p className="mb-4 text-left">
           {`stuff i'm currently working on / have worked on:`}
@@ -39,8 +46,11 @@ export default function Page() {
         <p className="mb-4 text-left">
           {`feel feel to reach to out!`}
         </p>
+
+        <p className="text-3xl font-biro-script mb-4 text-left">-idhant.</p>
       </section>
 
+      <p className="font-eb-garamond text-3xl text-center">***</p>
     </>
   )
 }

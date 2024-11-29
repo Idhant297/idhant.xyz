@@ -65,7 +65,7 @@ export default function Footer() {
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100 hover:underline"
             rel="noopener noreferrer"
             target="_blank"
-            href="public/doc/resume.pdf"
+            href="/doc/resume.pdf"
           >
             <ArrowIcon />
             <p className="ml-2 h-7">resume</p>
@@ -96,7 +96,7 @@ export default function Footer() {
           </a>
         </li>
       </ul>
-      <p className="text-xs text-neutral-500 mt-4">v1.02</p>
+      <p className="text-xs text-neutral-500 mt-4">v1.03</p>
     </footer>
   )
 }

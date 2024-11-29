@@ -31,6 +31,7 @@
 
 html {
   min-width: 360px;
+  background-color: #0a1529; /* Change this to your desired color */
 }
 
 .prose .anchor {
@@ -149,6 +150,13 @@ table {
   text-wrap: balance;
 }
 
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('/fonts/EBGaramond-VariableFont_wght.ttf') format('truetype'); /* Corrected path */
+  font-weight: normal;
+  font-style: normal;
+}
+
 .font-eb-garamond {
   font-family: 'EB Garamond', serif;
 }
@@ -156,4 +164,16 @@ table {
 .menu-heading {
   text-align: left; /* Aligns the text to the left */
   margin-left: 0;   /* Ensures no extra margin on the left */
+}
+
+@font-face {
+  font-family: 'Biro Script Plus';
+  src: url('/fonts/Biro_Script_Plus.ttf') format('truetype'); /* Corrected path */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.font-biro-script {
+  font-family: 'Biro Script Plus', cursive;
 }
