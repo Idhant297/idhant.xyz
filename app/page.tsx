@@ -47,7 +47,7 @@ export default function Page() {
           {`feel free to reach to out!`}
         </p>
 
-        <p className="text-3xl font-biro-script mb-4 text-left">-idhant.</p>
+        <p className="text-3xl font-biro-script mb-4 text-left">-idhant</p>
       </section>
 
       <p className="font-eb-garamond text-3xl text-center">***</p>

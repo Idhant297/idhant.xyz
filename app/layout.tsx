@@ -10,9 +10,7 @@ import { baseUrl } from './sitemap'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  title: {
-    default: 'idhant gulati',
-  },
+  title: 'idhant gulati',
   description: 'idhant.xyz',
   openGraph: {
     title: 'idhant',
