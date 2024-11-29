@@ -28,12 +28,12 @@ export default function Page() {
 
       <section>
         <p className="mb-4 text-left">
-          {`stuff i'm currently working on / have worked on:`}
+          {`stuff i'm currently working on / have worked on in the past:`}
         </p>
         <ul className="list-disc pl-5">
           <li>researching on mixture of experts (MoEs), interpreting the inner working of these models. also, aiming for extreme domain specialisation in these models. </li>
-          <li>developing a machine learning model to predict the power usage of 3d printers for digital twin framework for a research lab.</li>
-          <li>building computer vision algorith for fully autonomous combat robots for robomaster north america university league team at RoboX club (penn state).  </li>
+          <li>developing a machine learning model to predict the power usage of 3d printers contrinuting towards a digital twin framework for a research lab.</li>
+          <li>building computer vision algorithm for fully autonomous combat robot for robomaster north america university league team at RoboX club (penn state).  </li>
           <li>developed DenseTEX, a machine learning model to convert mathematical equation images into LaTeX. implemented encoder using DenseNet-169 and integrated gpt-style decoder.</li>
           <li>and more ...</li>
         </ul>
@@ -44,7 +44,7 @@ export default function Page() {
           {``}
         </p>
         <p className="mb-4 text-left">
-          {`feel feel to reach to out!`}
+          {`feel free to reach to out!`}
         </p>
 
         <p className="text-3xl font-biro-script mb-4 text-left">-idhant.</p>
