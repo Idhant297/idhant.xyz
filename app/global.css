@@ -31,7 +31,12 @@
 
 html {
   min-width: 360px;
-  background-color: #0a1529; /* Change this to your desired color */
+  background-color: #0a1529;
+  color: #ffffff !important;
+}
+
+body {
+  color: #ffffff !important;
 }
 
 .prose .anchor {
@@ -176,5 +181,26 @@ table {
 
 .font-biro-script {
   font-family: 'Biro Script Plus', cursive;
+}
+
+/* Override any potential dark mode changes */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sh-class: #4c97f8;
+    --sh-identifier: white;
+    --sh-keyword: #f47067;
+    --sh-string: #0fa295;
+  }
+  html {
+    color-scheme: dark;
+    color: #ffffff !important;
+  }
+  body {
+    color: #ffffff !important;
+  }
+}
+
+.prose p, .prose h1, .prose h2, .prose h3, .prose h4, .prose strong, .prose ul, .prose ol {
+  color: #ffffff !important;
 }
 

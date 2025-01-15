@@ -96,7 +96,7 @@ export default function Footer() {
           </a>
         </li>
       </ul>
-      <p className="text-xs text-neutral-500 mt-4">v1.04.3</p>
+      <p className="text-xs text-neutral-500 mt-4">v1.04.4</p>
     </footer>
   )
 }
