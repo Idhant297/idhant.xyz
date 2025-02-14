@@ -82,6 +82,17 @@ function createHeading(level: number) {
   }
 }
 
+function Callout({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="my-8 flex rounded-lg bg-neutral-100 p-4 dark:bg-neutral-900">
+      <div className="flex w-4 items-center">
+        <div className="h-full w-0.5 bg-neutral-500" />
+      </div>
+      <div className="flex-grow px-4">{children}</div>
+    </div>
+  );
+}
+
 const components = {
   h1: createHeading(1),
   h2: createHeading(2),
@@ -93,13 +104,14 @@ const components = {
   a: CustomLink,
   code: Code,
   Table,
+  Callout
 }
 
 export function CustomMDX(props: any) {
   return (
     <MDXRemote
       {...props}
-      components={{ ...components, ...(props.components || {}) }}
+      components={components}
     />
   )
 }

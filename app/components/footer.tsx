@@ -1,3 +1,5 @@
+import { Clock } from './clock'
+
 function ArrowIcon() {
   return (
     <svg
@@ -38,7 +40,7 @@ export default function Footer() {
             href="https://x.com/Idhant297"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">x</p>
+            <p className="ml-2 h-7">twitter (x)</p>
           </a>
         </li>
         <li>
@@ -96,7 +98,10 @@ export default function Footer() {
           </a>
         </li>
       </ul>
-      <p className="text-xs text-neutral-500 mt-4">v1.04.4</p>
+      <div className="flex justify-between items-center mt-4">
+        <p className="text-xs text-neutral-500">v1.04.5</p>
+        <Clock />
+      </div>
     </footer>
   )
 }
