@@ -106,7 +106,7 @@ export default function Footer() {
         </li>
       </ul>
       <div className="flex justify-between items-center mt-4">
-        <p className="text-xs footer-version">v1.05.1</p>
+        <p className="text-xs footer-version">v1.05.2</p>
         <Clock />
       </div>
     </footer>

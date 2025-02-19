@@ -48,7 +48,7 @@ export default function Page() {
 
       <section>
         <p className="mb-4 text-left">
-          {`i'm majoring in cs at penn state. i find it fun making machines learn and studying 
+          {`i'm majoring in cs at penn state. i find it fun making machines learn (ml) and studying 
           the intricacies of how it works. i also like building cool stuff
           using machine learning. on the side, i also enjoy working with robots.`}
         </p>
