@@ -1,3 +1,5 @@
+'use client';
+
 import { Clock } from './clock'
 
 function ArrowIcon() {
@@ -20,10 +22,21 @@ function ArrowIcon() {
 export default function Footer() {
   return (
     <footer className="mb-16">
-      <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
+      <style jsx>{`
+        .footer-links {
+          color: var(--footer-text);
+        }
+        .footer-link:hover {
+          color: var(--footer-text-hover);
+        }
+        .footer-version {
+          color: var(--footer-version);
+        }
+      `}</style>
+      <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 footer-links md:flex-row md:space-x-4 md:space-y-0">
         <li>
           <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100 hover:underline"
+            className="footer-link flex items-center transition-all hover:underline"
             rel="noopener noreferrer"
             target="_blank"
             href="https://github.com/Idhant297"
@@ -34,7 +47,7 @@ export default function Footer() {
         </li>
         <li>
           <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100 hover:underline"
+            className="footer-link flex items-center transition-all hover:underline"
             rel="noopener noreferrer"
             target="_blank"
             href="https://x.com/Idhant297"
@@ -45,7 +58,7 @@ export default function Footer() {
         </li>
         <li>
           <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100 hover:underline"
+            className="footer-link flex items-center transition-all hover:underline"
             rel="noopener noreferrer"
             target="_blank"
             href="https://www.instagram.com/idhant297/"
@@ -56,7 +69,7 @@ export default function Footer() {
         </li>
         <li>
           <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100 hover:underline"
+            className="footer-link flex items-center transition-all hover:underline"
             href="mailto:idhant.gulati@gmail.com"
           >
             <ArrowIcon /> <p className="ml-2 h-7"> mail</p>
@@ -64,7 +77,7 @@ export default function Footer() {
         </li>
         <li>
           <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100 hover:underline"
+            className="footer-link flex items-center transition-all hover:underline"
             rel="noopener noreferrer"
             target="_blank"
             href="/doc/resume.pdf"
@@ -76,20 +89,14 @@ export default function Footer() {
 
         {/* just a spacer */}
         <li>
-          <a
-            className=""
-            rel=""
-            target=""
-            href=""
-          >
-
+          <a className="" rel="" target="" href="">
             <p className="ml-2 h-7"></p>
           </a>
         </li>
 
         <li>
           <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100 hover:underline"
+            className="footer-link flex items-center transition-all hover:underline"
             rel="noopener noreferrer"
             target="_blank"
             href="https://idhant.xyz/"
@@ -99,7 +106,7 @@ export default function Footer() {
         </li>
       </ul>
       <div className="flex justify-between items-center mt-4">
-        <p className="text-xs text-neutral-500">v1.04.5</p>
+        <p className="text-xs footer-version">v1.05</p>
         <Clock />
       </div>
     </footer>

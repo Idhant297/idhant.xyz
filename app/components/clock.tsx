@@ -25,8 +25,15 @@ export function Clock() {
   }
 
   return (
-    <div className="text-xs text-neutral-500">
-      {formatDate(date)}
-    </div>
+    <>
+      <style jsx>{`
+        .clock {
+          color: var(--footer-version);
+        }
+      `}</style>
+      <div className="text-xs clock">
+        {formatDate(date)}
+      </div>
+    </>
   )
 } 

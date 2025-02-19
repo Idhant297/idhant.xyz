@@ -5,6 +5,7 @@
   color: #fefefe;
 }
 
+/* Light mode variables */
 :root {
   --sh-class: #2d5e9d;
   --sh-identifier: #354150;
@@ -15,33 +16,76 @@
   --sh-jsxliterals: #6266d1;
   --sh-property: #e25a1c;
   --sh-entity: #e25a1c;
+  
+  /* Light theme colors */
+  --day: #fffdfa;
+  --evening: #fccc83;
+  --dusk: #db7a2a;
+  --night: #0f131c;
+  --dawn: #16132b;
+  --morning: #9fb3bf;
+  --light: var(--day);
+  --dark: var(--night);
+  --shadow: #1a1917;
+  --bounce-light: #f5d7a6;
+  --timing-fn: cubic-bezier(0.455, 0.190, 0.000, 0.985);
+  
+  /* Light theme text colors */
+  --text-primary: #1f2937;
+  --text-secondary: #4b5563;
+  --text-tertiary: #6b7280;
+  --bg-primary: #ffffff;
+  
+  /* Footer specific colors */
+  --footer-text: #1f2937;
+  --footer-text-dim: #374151;
+  --footer-text-hover: #111827;
+  --footer-version: #1f2937;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --sh-class: #4c97f8;
-    --sh-identifier: white;
-    --sh-keyword: #f47067;
-    --sh-string: #0fa295;
-  }
-  html {
-    color-scheme: dark;
-  }
+/* Dark mode variables */
+:root.dark {
+  --sh-class: #4c97f8;
+  --sh-identifier: white;
+  --sh-keyword: #f47067;
+  --sh-string: #0fa295;
+  
+  /* Dark theme colors */
+  --light: var(--night);
+  --dark: var(--day);
+  --shadow: #030307;
+  --bounce-light: #1b293f;
+  
+  /* Dark theme text colors */
+  --text-primary: #ffffff;
+  --text-secondary: #e5e7eb;
+  --text-tertiary: #d1d5db;
+  --bg-primary: #0a1529;
+  
+  /* Footer specific colors */
+  --footer-text: #d1d5db;
+  --footer-text-dim: #9ca3af;
+  --footer-text-hover: #f3f4f6;
+  --footer-version: #d1d5db;
 }
 
 html {
   min-width: 360px;
-  background-color: #0a1529;
-  color: #ffffff !important;
 }
 
 body {
-  color: #ffffff !important;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Remove conflicting color definitions */
+.prose p, .prose h1, .prose h2, .prose h3, .prose h4, .prose strong, .prose ul, .prose ol {
+  color: var(--text-primary);
 }
 
 .prose .anchor {
   @apply absolute invisible no-underline;
-
   margin-left: -1em;
   padding-right: 0.5em;
   width: 80%;
@@ -54,11 +98,13 @@ body {
 }
 
 .prose a {
-  @apply underline transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em];
+  @apply transition-all underline-offset-2 decoration-[0.1em];
+  color: var(--text-primary);
+  text-decoration-color: var(--text-tertiary);
 }
 
 .prose .anchor:after {
-  @apply text-neutral-300 dark:text-neutral-700;
+  color: var(--text-tertiary);
   content: '#';
 }
 
@@ -67,11 +113,14 @@ body {
 }
 
 .prose pre {
-  @apply bg-neutral-50 dark:bg-neutral-900 rounded-lg overflow-x-auto border border-neutral-200 dark:border-neutral-900 py-2 px-3 text-sm;
+  @apply rounded-lg overflow-x-auto border py-2 px-3 text-sm;
+  background-color: var(--bg-primary);
+  border-color: var(--text-tertiary);
 }
 
 .prose code {
   @apply px-1 py-0.5 rounded-lg;
+  color: var(--text-primary);
 }
 
 .prose pre code {
@@ -89,8 +138,9 @@ body {
   @apply m-0;
 }
 
+/* Typography with proper dark mode handling */
 .prose p {
-  @apply my-4 text-neutral-800 dark:text-neutral-200;
+  @apply my-4;
 }
 
 .prose h1 {
@@ -121,17 +171,11 @@ body {
   @apply list-decimal pl-6;
 }
 
-.prose > :first-child {
-  /* Override removing top margin, causing layout shift */
-  margin-top: 1.25em !important;
-  margin-bottom: 1.25em !important;
-}
-
-pre::-webkit-scrollbar {
+.prose pre::-webkit-scrollbar {
   display: none;
 }
 
-pre {
+.prose pre {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -157,7 +201,7 @@ table {
 
 @font-face {
   font-family: 'EB Garamond';
-  src: url('/fonts/EBGaramond-VariableFont_wght.ttf') format('truetype'); /* Corrected path */
+  src: url('/fonts/EBGaramond-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -167,40 +211,28 @@ table {
 }
 
 .menu-heading {
-  text-align: left; /* Aligns the text to the left */
-  margin-left: 0;   /* Ensures no extra margin on the left */
+  text-align: left;
+  margin-left: 0;
 }
 
 @font-face {
   font-family: 'Biro Script Plus';
-  src: url('/fonts/Biro_Script_Plus.ttf') format('truetype'); /* Corrected path */
+  src: url('/fonts/Biro_Script_Plus.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-
 
 .font-biro-script {
   font-family: 'Biro Script Plus', cursive;
 }
 
-/* Override any potential dark mode changes */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --sh-class: #4c97f8;
-    --sh-identifier: white;
-    --sh-keyword: #f47067;
-    --sh-string: #0fa295;
-  }
-  html {
-    color-scheme: dark;
-    color: #ffffff !important;
-  }
-  body {
-    color: #ffffff !important;
-  }
+/* Syntax highlighting for dark mode */
+.dark {
+  --sh-class: #4c97f8;
+  --sh-identifier: white;
+  --sh-keyword: #f47067;
+  --sh-string: #0fa295;
 }
 
-.prose p, .prose h1, .prose h2, .prose h3, .prose h4, .prose strong, .prose ul, .prose ol {
-  color: #ffffff !important;
-}
+/* Keep other styles unchanged */
 
