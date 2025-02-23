@@ -2,12 +2,15 @@
   position: fixed;
   inset: 0;
   pointer-events: none;
-  transition: background-color 1s var(--timing-fn);
   background-color: var(--light);
   z-index: -1;
   transform: translateZ(0);
   will-change: background-color;
   backface-visibility: hidden;
+
+  animation-duration: 0s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
 }
 
 .animation_ready {
@@ -238,65 +241,35 @@
 /* Mobile optimizations */
 @media (max-width: 768px) {
   .root {
-    transition: background-color 0.5s ease;
+    transition: background-color 0.3s ease;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
+    background-color: rgb(230, 214, 187);
   }
 
+  .root.dark {
+    background-color: rgb(18, 23, 36);
+  }
+
+  /* Disable complex animations on mobile */
   .animation_ready {
-    animation-duration: 0.5s;
-    -webkit-animation-duration: 0.5s;
+    animation: none;
+    -webkit-animation: none;
   }
 
   .animation_ready.dark {
-    animation-duration: 0.8s;
-    -webkit-animation-duration: 0.8s;
+    animation: none;
+    -webkit-animation: none;
   }
 
-  .perspective {
+  /* Hide decorative elements on mobile */
+  .perspective,
+  .dark .perspective,
+  .leaves,
+  .glow,
+  .glow_bounce,
+  .progressive_blur,
+  .dappled_light {
     display: none;
   }
-
-  .dark .perspective {
-    display: none;
-  }
-
-  .leaves {
-    display: none;
-  }
-
-  .blur_layer {
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    transform: translate3d(0,0,0);
-    -webkit-transform: translate3d(0,0,0);
-  }
-
-  .glow, .glow_bounce {
-    opacity: 0.3;
-    transition: background 0.5s ease;
-    -webkit-transition: background 0.5s ease;
-    transform: translate3d(0,0,0);
-    -webkit-transform: translate3d(0,0,0);
-  }
-
-  .shutters {
-    gap: 40px;
-    transition: gap 0.5s ease;
-    -webkit-transition: gap 0.5s ease;
-  }
-
-  .dark .shutters {
-    gap: 15px;
-  }
-
-  .shutter {
-    height: 30px;
-    transition: height 0.5s ease;
-    -webkit-transition: height 0.5s ease;
-  }
-
-  .dark .shutter {
-    height: 60px;
-  }
-} 
+}

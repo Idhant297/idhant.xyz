@@ -5,14 +5,12 @@ import styles from './background.module.css';
 
 const Background = () => {
   const [isDark, setIsDark] = useState(false);
-  const [isAnimationReady, setIsAnimationReady] = useState(false);
 
   useEffect(() => {
     // Check system dark mode preference
     const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
     const updateTheme = (e: MediaQueryListEvent | MediaQueryList) => {
       setIsDark(e.matches);
-      setIsAnimationReady(true);
     };
 
     // Initial check
@@ -23,13 +21,11 @@ const Background = () => {
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.code === 'Space') {
-        setIsAnimationReady(true);
         setIsDark(prev => !prev);
       }
     };
 
     const handleClick = () => {
-      setIsAnimationReady(true);
       setIsDark(prev => !prev);
     };
 
@@ -55,9 +51,7 @@ const Background = () => {
 
   return (
     <div
-      className={`${styles.root} ${
-        isAnimationReady ? styles.animation_ready : ''
-      } ${isDark ? styles.dark : ''}`}
+      className={`${styles.root} ${styles.animation_ready} ${isDark ? styles.dark : ''}`}
     >
       <div className={styles.dappled_light}>
         <div className={styles.glow}></div>

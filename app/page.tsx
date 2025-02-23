@@ -30,10 +30,10 @@ export default function Page() {
             href="https://x.com/Idhant297" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center text-[var(--text-primary)] transition-all hover:text-[var(--text-primary)] hover:underline"
+            className="inline-flex items-center text-[var(--text-primary)] transition-colors duration-300 hover:text-[var(--text-primary)] hover:underline"
           >
-            <span className="mt text-[var(--text-primary)]"><ArrowIcon /></span>
-            <span className="ml-1 text-[var(--text-primary)]">dm</span>
+            <span className="mt text-[var(--text-primary)] transition-colors duration-300"><ArrowIcon /></span>
+            <span className="ml-1 text-[var(--text-primary)] transition-colors duration-300">dm</span>
           </a>{' '}
           me if you'd like to meet up!
         </Callout>
