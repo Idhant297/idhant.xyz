@@ -24,7 +24,7 @@ export default function Page() {
     <>
       <section>
         <Header />
-        <Callout>
+        {/* <Callout>
           🌁 currently in sf / berkeley!{' '}
           <a 
             href="https://x.com/Idhant297" 
@@ -36,7 +36,7 @@ export default function Page() {
             <span className="ml-1 text-[var(--text-primary)] transition-colors duration-300">dm</span>
           </a>{' '}
           me if you'd like to meet up!
-        </Callout>
+        </Callout> */}
         <div className="flex justify-between items-center">
           <p className="text-3xl font-biro-script mb-4 text-left">yo,</p>
           <ThemeToggle />
