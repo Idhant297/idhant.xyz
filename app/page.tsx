@@ -24,7 +24,10 @@ export default function Page() {
       <section className="mb-0">
         <Header />
         <p className="text-4xl font-biro-script mb-3 text-left">yo,</p>
-        <p className="mb-0 text-left text-sm">
+      </section>
+
+      <section className="mb-4">
+        <p className="mb-4 text-left text-sm">
           {`welcome to this `}<span className="italic font-libre-baskerville">little space</span>{` of mine on the internet.`}
         </p>
       </section>

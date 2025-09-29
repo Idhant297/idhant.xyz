@@ -91,12 +91,12 @@ export default function Footer() {
 
         </ul>
         <div className="flex items-center gap-2">
-          <AnimationToggle /> {/* comment this out before pushing */}
+          {/* <AnimationToggle /> comment this out before pushing */}
           <ThemeToggle />
         </div>
       </div>
       <div className="flex justify-between items-center mt-4">
-        <p className="footer-version text-sm">v2.00.1 (sept 2025)</p>
+        <p className="footer-version text-sm">v2.00.2 (sept 2025)</p>
         <Clock />
       </div>
     </footer>
