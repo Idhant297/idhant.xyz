@@ -33,7 +33,7 @@ export default function Page() {
       </section>
 
       <div className="flex gap-8">
-        <div className="max-w-2xl">
+        <div className="w-full max-w-2xl">
           <section className="mb-4">
             <p className="mb-4 text-left text-sm leading-relaxed">
               {`over the past years, i've spent countless hours understanding, thinking about, and working on beautiful problems in `}<span className="italic font-libre-baskerville">machine learning</span>{`. i'm deeply interested in understanding these systems in a `}<span className="italic font-libre-baskerville">mechanistic</span>{` manner—how their elegant architectures give rise to complex yet beautiful phenomena. i'm also passionate about exploring how these highly capable systems can be applied to real-world problems and how other fields can benefit from this technology.`}

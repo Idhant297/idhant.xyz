@@ -270,11 +270,11 @@
     transition: background-color 0.3s ease;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
-    background-color: rgb(230, 214, 187);
+    background-color: #f5e6ca;
   }
 
   .root.dark {
-    background-color: rgb(18, 23, 36);
+    background-color: var(--night);
   }
 
   /* Disable complex animations on mobile */

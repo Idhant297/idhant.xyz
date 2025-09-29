@@ -34,7 +34,7 @@ export default function Header() {
       <img
         src={selectedImage}
         alt="idhant"
-        className="w-32 h-32 rounded-lg ml-auto"
+        className="w-24 h-24 md:w-32 md:h-32 rounded-lg ml-auto"
       />
     </div>
   )
