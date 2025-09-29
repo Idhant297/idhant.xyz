@@ -75,7 +75,7 @@ export default function Blog({ params }: { params: { slug: string } }) {
             url: `${baseUrl}/blog/${post.slug}`,
             author: {
               '@type': 'Person',
-              name: 'Idhant Gulati',
+              name: 'idhant',
             },
           }),
         }}

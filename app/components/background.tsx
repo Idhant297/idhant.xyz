@@ -7,47 +7,54 @@ const Background = () => {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    // Check system dark mode preference
+    // Check localStorage for theme
+    const savedTheme = localStorage.getItem('theme');
     const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    // Initial theme setup
+    if (savedTheme) {
+      setIsDark(savedTheme === 'dark');
+    } else {
+      setIsDark(darkModeQuery.matches);
+    }
+
+    // Listen for system dark mode changes
     const updateTheme = (e: MediaQueryListEvent | MediaQueryList) => {
-      setIsDark(e.matches);
-    };
-
-    // Initial check
-    updateTheme(darkModeQuery);
-
-    // Listen for changes
-    darkModeQuery.addEventListener('change', updateTheme);
-
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.code === 'Space') {
-        setIsDark(prev => !prev);
+      if (!localStorage.getItem('theme')) {
+        setIsDark(e.matches);
       }
     };
+    
+    darkModeQuery.addEventListener('change', updateTheme);
 
-    const handleClick = () => {
-      setIsDark(prev => !prev);
+    // Listen for storage changes (when theme is changed by ThemeToggle)
+    const handleStorageChange = () => {
+      const theme = localStorage.getItem('theme');
+      if (theme) {
+        setIsDark(theme === 'dark');
+      }
     };
-
-    document.addEventListener('keydown', handleKeyDown);
-    document.addEventListener('click', handleClick);
+    
+    window.addEventListener('storage', handleStorageChange);
+    
+    // Listen for theme changes from ThemeToggle on the same tab
+    const handleThemeChange = () => {
+      const theme = localStorage.getItem('theme');
+      if (theme) {
+        setIsDark(theme === 'dark');
+      }
+    };
+    
+    // Check for theme changes periodically (for same-tab updates)
+    const interval = setInterval(handleThemeChange, 100);
 
     return () => {
       darkModeQuery.removeEventListener('change', updateTheme);
-      document.removeEventListener('keydown', handleKeyDown);
-      document.removeEventListener('click', handleClick);
+      window.removeEventListener('storage', handleStorageChange);
+      clearInterval(interval);
     };
   }, []);
 
-  // Update document classes when theme changes
-  useEffect(() => {
-    const root = document.documentElement;
-    if (isDark) {
-      root.classList.add('dark');
-    } else {
-      root.classList.remove('dark');
-    }
-  }, [isDark]);
 
   return (
     <div

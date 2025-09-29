@@ -238,6 +238,32 @@
   }
 }
 
+/* comment this out before pushing */
+/* Animation disabled styles */
+:global(.animation-disabled) .animation_ready {
+  animation: none !important;
+  background-color: var(--light) !important;
+}
+
+:global(.animation-disabled) .animation_ready.dark {
+  animation: none !important;
+  background-color: var(--night) !important;
+}
+
+:global(.animation-disabled) .leaves {
+  animation: none !important;
+  filter: none !important;
+}
+
+:global(.animation-disabled) .perspective,
+:global(.animation-disabled) .glow,
+:global(.animation-disabled) .glow_bounce,
+:global(.animation-disabled) .progressive_blur,
+:global(.animation-disabled) .dappled_light {
+  display: none !important;
+}
+/* End of Animation disabled styles */
+
 /* Mobile optimizations */
 @media (max-width: 768px) {
   .root {

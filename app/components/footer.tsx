@@ -1,6 +1,8 @@
 'use client';
 
 import { Clock } from './clock'
+import ThemeToggle from './theme-toggle'
+import AnimationToggle from './animation-toggle'
 
 function ArrowIcon() {
   return (
@@ -33,7 +35,8 @@ export default function Footer() {
           color: var(--footer-version);
         }
       `}</style>
-      <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 footer-links md:flex-row md:space-x-4 md:space-y-0">
+      <div className="flex justify-between items-center mt-8">
+        <ul className="font-sm flex flex-col space-x-0 space-y-2 footer-links md:flex-row md:space-x-4 md:space-y-0">
         <li>
           <a
             className="footer-link flex items-center transition-all hover:underline"
@@ -50,10 +53,10 @@ export default function Footer() {
             className="footer-link flex items-center transition-all hover:underline"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://x.com/Idhant297"
+            href="https://scholar.google.com/citations?hl=en&user=3ABAsUkAAAAJ&view_op=list_works&gmla=AH8HC4xPmA4CllE6w05CUvgZdfEn4oK-Hq_9DSJ83WAzKZrOFSDZSOOmZaoSxMrytgPBX1XbyKSuKdGuz6tAteEZ"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">twitter (x)</p>
+            <p className="ml-2 h-7">scholar</p>
           </a>
         </li>
         <li>
@@ -61,18 +64,10 @@ export default function Footer() {
             className="footer-link flex items-center transition-all hover:underline"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://www.instagram.com/idhant297/"
+            href="https://x.com/Idhant297"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">instagram</p>
-          </a>
-        </li>
-        <li>
-          <a
-            className="footer-link flex items-center transition-all hover:underline"
-            href="mailto:idhant.gulati@gmail.com"
-          >
-            <ArrowIcon /> <p className="ml-2 h-7"> mail</p>
+            <p className="ml-2 h-7">twitter (x)</p>
           </a>
         </li>
         <li>
@@ -94,19 +89,14 @@ export default function Footer() {
           </a>
         </li>
 
-        <li>
-          <a
-            className="footer-link flex items-center transition-all hover:underline"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://idhant.xyz/"
-          >
-            <p className="ml-0 h-4">idhant.xyz</p>
-          </a>
-        </li>
-      </ul>
+        </ul>
+        <div className="flex items-center gap-2">
+          <AnimationToggle /> {/* comment this out before pushing */}
+          <ThemeToggle />
+        </div>
+      </div>
       <div className="flex justify-between items-center mt-4">
-        <p className="text-xs footer-version">v1.05.5</p>
+        <p className="footer-version text-sm">v2.00 (sept 2025)</p>
         <Clock />
       </div>
     </footer>

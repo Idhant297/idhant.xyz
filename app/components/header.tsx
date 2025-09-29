@@ -4,11 +4,13 @@ import { useState, useEffect } from 'react'
 
 // Array of profile images
 const profileImages = [
-    '/image/img.jpeg',
-    '/image/img-1.jpeg',
+    // '/image/img.jpeg',
     '/image/img-2.jpeg',
-    '/image/img-3.jpeg',
-    '/image/img-4.jpeg',
+    // '/image/img-3.jpeg',
+    // '/image/img-4.jpeg',
+    '/image/img-5.jpeg',
+    '/image/img-6.jpeg',
+    '/image/img-7.jpeg',
 ]
 
 // Get a random image that's different from a specific image
@@ -26,12 +28,12 @@ export default function Header() {
 
   return (
     <div className="flex items-center mb-8">
-      <h1 className="text-4xl font tracking-tighter font-eb-garamond flex-grow">
-        idhant gulati
+      <h1 className="text-5xl font tracking-tighter font-eb-garamond flex-grow">
+        idhant
       </h1>
       <img
         src={selectedImage}
-        alt="idhant gulati"
+        alt="idhant"
         className="w-32 h-32 rounded-lg ml-auto"
       />
     </div>

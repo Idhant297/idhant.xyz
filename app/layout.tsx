@@ -11,7 +11,7 @@ import Background from './components/background'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  title: 'idhant gulati',
+  title: 'idhant',
   description: 'idhant.xyz',
   openGraph: {
     title: 'idhant',
@@ -66,17 +66,19 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto relative">
+      <body className="antialiased max-w-6xl mx-8 mt-4 lg:mx-auto relative">
         <Background />
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0 relative z-10">
+        <div className="flex-auto min-w-0 mt-2 flex flex-col px-6 md:px-8 relative z-10">
           <div className="flex justify-end">
             <Navbar />
           </div>
-          {children}
+          <main>
+            {children}
+          </main>
           <Footer />
           <Analytics />
           <SpeedInsights />
-        </main>
+        </div>
       </body>
     </html>
   )

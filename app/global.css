@@ -74,6 +74,7 @@ html {
 }
 
 body {
+  font-family: 'Libre Baskerville', serif;
   color: var(--text-primary);
   background-color: var(--bg-primary);
   transition: color 0.3s ease, background-color 0.3s ease;
@@ -204,6 +205,27 @@ table {
   src: url('/fonts/EBGaramond-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('/fonts/LibreBaskerville-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('/fonts/LibreBaskerville-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('/fonts/LibreBaskerville-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
 }
 
 .font-eb-garamond {
