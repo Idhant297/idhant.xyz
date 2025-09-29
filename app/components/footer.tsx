@@ -96,7 +96,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex justify-between items-center mt-4">
-        <p className="footer-version text-sm">v2.00 (sept 2025)</p>
+        <p className="footer-version text-sm">v2.00.1 (sept 2025)</p>
         <Clock />
       </div>
     </footer>
