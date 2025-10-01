@@ -74,7 +74,7 @@ html {
 }
 
 body {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Iowan Old Style', Georgia, serif;
   color: var(--text-primary);
   background-color: var(--bg-primary);
   transition: color 0.3s ease, background-color 0.3s ease;
@@ -201,31 +201,51 @@ table {
 }
 
 @font-face {
-  font-family: 'EB Garamond';
-  src: url('/fonts/EBGaramond-VariableFont_wght.ttf') format('truetype');
+  font-family: 'Iowan Old Style';
+  src: url('/fonts/iowanoldst_bt/bitstream-iowan-old-style-bt.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Libre Baskerville';
-  src: url('/fonts/LibreBaskerville-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Libre Baskerville';
-  src: url('/fonts/LibreBaskerville-Bold.ttf') format('truetype');
+  font-family: 'Iowan Old Style';
+  src: url('/fonts/iowanoldst_bt/bitstream-iowan-old-style-bold-bt.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Libre Baskerville';
-  src: url('/fonts/LibreBaskerville-Italic.ttf') format('truetype');
+  font-family: 'Iowan Old Style';
+  src: url('/fonts/iowanoldst_bt/bitstream-iowan-old-style-italic-bt.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Iowan Old Style';
+  src: url('/fonts/iowanoldst_bt/bitstream-iowan-old-style-bold-italic-bt.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Iowan Old Style';
+  src: url('/fonts/iowanoldst_bt/bitstream-iowan-old-style-black-bt.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Iowan Old Style';
+  src: url('/fonts/iowanoldst_bt/bitstream-iowan-old-style-black-italic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
 }
 
 .font-eb-garamond {

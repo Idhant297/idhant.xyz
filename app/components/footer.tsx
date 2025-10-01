@@ -39,7 +39,7 @@ export default function Footer() {
         <ul className="font-sm flex flex-col space-x-0 space-y-2 footer-links md:flex-row md:space-x-4 md:space-y-0">
         <li>
           <a
-            className="footer-link flex items-center transition-all hover:underline"
+            className="footer-link flex items-center transition-all hover:underline underline-offset-2 decoration-[0.1em]"
             rel="noopener noreferrer"
             target="_blank"
             href="https://github.com/Idhant297"
@@ -50,7 +50,7 @@ export default function Footer() {
         </li>
         <li>
           <a
-            className="footer-link flex items-center transition-all hover:underline"
+            className="footer-link flex items-center transition-all hover:underline underline-offset-2 decoration-[0.1em]"
             rel="noopener noreferrer"
             target="_blank"
             href="https://scholar.google.com/citations?hl=en&user=3ABAsUkAAAAJ&view_op=list_works&gmla=AH8HC4xPmA4CllE6w05CUvgZdfEn4oK-Hq_9DSJ83WAzKZrOFSDZSOOmZaoSxMrytgPBX1XbyKSuKdGuz6tAteEZ"
@@ -61,7 +61,7 @@ export default function Footer() {
         </li>
         <li>
           <a
-            className="footer-link flex items-center transition-all hover:underline"
+            className="footer-link flex items-center transition-all hover:underline underline-offset-2 decoration-[0.1em]"
             rel="noopener noreferrer"
             target="_blank"
             href="https://x.com/Idhant297"
@@ -72,7 +72,7 @@ export default function Footer() {
         </li>
         <li>
           <a
-            className="footer-link flex items-center transition-all hover:underline"
+            className="footer-link flex items-center transition-all hover:underline underline-offset-2 decoration-[0.1em]"
             rel="noopener noreferrer"
             target="_blank"
             href="/doc/resume.pdf"
@@ -96,7 +96,14 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex justify-between items-center mt-4">
-        <p className="footer-version text-sm">v2.00.4 (sept 2025)</p>
+        <a 
+          href="https://github.com/idhant297/website" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="footer-version text-sm"
+        >
+          v2.01.0 (oct 2025)
+        </a>
         <Clock />
       </div>
     </footer>

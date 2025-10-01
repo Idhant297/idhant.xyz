@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 
 // Array of profile images
 const profileImages = [
-    // '/image/img.jpeg',
+    '/image/img.jpeg',
     '/image/img-2.jpeg',
     // '/image/img-3.jpeg',
     // '/image/img-4.jpeg',
@@ -28,7 +28,7 @@ export default function Header() {
 
   return (
     <div className="flex items-center mb-8">
-      <h1 className="text-5xl font tracking-tighter font-eb-garamond flex-grow">
+      <h1 className="text-5xl font tracking-tighter flex-grow">
         idhant
       </h1>
       <img

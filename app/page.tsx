@@ -27,45 +27,45 @@ export default function Page() {
       </section>
 
       <section className="mb-4">
-        <p className="mb-4 text-left text-sm">
-          {`welcome to this `}<span className="italic font-libre-baskerville">little space</span>{` of mine on the internet.`}
+        <p className="mb-4 text-left text-[15px]">
+          {`welcome to this `}<span className="italic">little space</span>{` of mine on the internet`}
         </p>
       </section>
 
       <div className="flex gap-8">
         <div className="w-full max-w-2xl">
           <section className="mb-4">
-            <p className="mb-4 text-left text-sm leading-relaxed">
-              {`over the past years, i've spent countless hours understanding, thinking about, and working on beautiful problems in `}<span className="italic font-libre-baskerville">machine learning</span>{`. i'm deeply interested in understanding these systems in a `}<span className="italic font-libre-baskerville">mechanistic</span>{` manner—how their elegant architectures give rise to complex yet beautiful phenomena. i'm also passionate about exploring how these highly capable systems can be applied to real-world problems and how other fields can benefit from this technology.`}
+            <p className="mb-4 text-left text-[15px] leading-relaxed">
+              {`over the past years, i've spent countless hours understanding, thinking about, and working on beautiful problems in `}<span className="italic">machine learning</span>{`. i'm deeply interested in understanding these systems in a `}<span className="italic">mechanistic</span>{` manner—how their elegant architectures give rise to complex yet beautiful phenomena. i'm also passionate about exploring how these highly capable systems can be applied to real-world problems and how other fields can benefit from this technology.`}
             </p>
           </section>
 
           <section className="mb-4">
-            <p className="mb-4 text-left text-sm leading-relaxed">
-              {`currently, `}<span className="italic font-libre-baskerville">researching</span>{` vision-language models, specifically investigating how misalignment emerges broadly across domains when it's only induced in a narrow domain during post-training.`}
+            <p className="mb-4 text-left text-[15px] leading-relaxed">
+              {`currently, `}<span className="italic">researching</span>{` vision-language models, specifically investigating how misalignment emerges broadly across domains when it's only induced in a narrow domain during post-training.`}
             </p>
           </section>
 
           <section className="mb-4">
-            <p className="mb-4 text-left text-sm leading-relaxed">
-              {`over the summer, as part of `}<span className="italic font-libre-baskerville">Tzafon</span>{`, i researched reasoning models. i spent my time developing a framework around sampling trajectories from language models to improve their reasoning capabilities. also, contributed to the pre-training regime by helping curate clean, high-quality data for model training.`}
+            <p className="mb-4 text-left text-[15px] leading-relaxed">
+              {`over the summer, as part of `}<a href="https://tzafon.ai" target="_blank" rel="noopener noreferrer" className="italic underline underline-offset-4 decoration-1">Tzafon</a>{`, i researched reasoning models. i spent my time developing a framework around sampling trajectories from language models to improve their reasoning capabilities. also, contributed to the pre-training regime by helping curate clean, high-quality data for model training.`}
             </p>
           </section>
 
           <section className="mb-4">
-            <p className="mb-4 text-left text-sm leading-relaxed">
+            <p className="mb-4 text-left text-[15px] leading-relaxed">
               {`in the past, independently researched on interpreting the inner working of mixture of experts (MoEs) for expert specialization and it got `}<a href="https://openreview.net/forum?id=GS4WXncwSF" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 decoration-1">accepted at ICLR '25</a>{`.`}
             </p>
           </section>
 
           <section className="mb-4">
-            <p className="mb-4 text-left text-sm leading-relaxed">
+            <p className="mb-4 text-left text-[15px] leading-relaxed">
               {`worked with my friends on `}<a href="https://github.com/Idhant297/DenseTeX" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 decoration-1">densetex</a>{` during `}<a href="https://buildspace.so/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 decoration-1">buildspace</a>{`, a fast and accurate image-to-latex model using transformers and CNNs. i also led my university's computer vision team for `}<a href="https://www.robomasterna.com/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 decoration-1">robomaster</a>{`, a competitive combat robotics tournament, for over a year—where i learned a lot about optimizing systems for resource-constrained environments. additionally, i was part of a research lab at my university where i worked on machine learning algorithms to predict and optimize power consumption in 3d printers.`}
             </p>
           </section>
 
           <section className="mb-4">
-            <p className="mb-4 text-left text-sm leading-relaxed">
+            <p className="mb-4 text-left text-[15px] leading-relaxed">
               {`i like interacting with new people. if anything from the above interests you, feel free to reach out via `}<a href="https://x.com/Idhant297" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 decoration-1">twitter</a>{` or `}<a href="mailto:idhant.gulati@gmail.com" className="underline underline-offset-4 decoration-1">email</a>{`.`}
             </p>
           </section>
